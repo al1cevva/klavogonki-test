@@ -1,4 +1,4 @@
-def sanitize_letter(letter):
+def sanitize_letter(letter: str) -> str:
     """
     :param letter: Буква
     :return: Кириллическую букву

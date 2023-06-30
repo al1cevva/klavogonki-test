@@ -15,7 +15,7 @@ class TestQuickGamePage:
 
         assert result_speed >= 400, result_mistakes == 0
 
-    @pytest.mark.skip(reason="Априори зафейлится")
+    @pytest.mark.skip(reason="Медленный тест, упадет в ошибку")
     def test_quick_game_with_errors(self, driver):
         form_page = QuickGamePage(driver, 'https://klavogonki.ru/')
         form_page.open()
